@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>琦嵐負責的網頁</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+<body>
+
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-static-top navbar-light bg-faded">
+        <a href="#" class="navbar-brand">NTU CS+X</a>
+        <ul class="nav navbar-nav float-xs-left">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+
+        <ul class="nav navbar-nav float-xs-right">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="supportedContentDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">個人練習</a>
+                <div class="dropdown-menu" aria-labelledby="supportedContentDropdown">
+                    <a class="dropdown-item" href="ex01.html">培宣</a>
+                    <a class="dropdown-item" href="ex02.html">鎮宇</a>
+                    <a class="dropdown-item" href="ex03.html">詠瑄</a>
+                    <a class="dropdown-item" href="ex04.html">威融</a>
+                    <a class="dropdown-item" href="ex05.html">琦嵐</a>
+                    <a class="dropdown-item" href="ex06.html">思璞+劉坤</a>
+                    <a class="dropdown-item" href="ex07.html">智煒</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <hr>
+
+    <!-- 每個人自行設計內容 -->
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="input-group">
+                <span class="input-group-btn">
+        <button  class="btn btn-secondary" type="button">x</button>
+      </span>
+                <input id="rx" type="text" class="form-control" placeholder="請輸入X  >150">
+
+            </div>
+            <div class="input-group">
+                <span class="input-group-btn">
+        <button  class="btn btn-secondary" type="button">y</button>
+      </span>
+                <input id="ry" type="text" class="form-control" placeholder="請輸入Y >150">
+
+            </div>
+        </div>
+        <button id="testx" type="button" class="btn btn-primary">随机x(0-500)</button>
+        <br>
+        <button id="testy" type="button" class="btn btn-primary">随机y(0-450)</button>
+        <div>
+            <button id="test" type="button" class="btn btn-primary">showBalloon</button>
+
+
+            <button id="testauto" type="button" class="btn btn-primary">自动上升</button>
+            <!--<button id="testautoM" type="button" class="btn btn-primary">LOGO右移</button>-->
+
+            <!--<input id="autoy" type="text" class="form-control" placeholder="請輸入autoY >150">-->
+
+        </div>
+
+        <!--<svg height="2000" width="2000" id="output">-->
+        <!--<ellipse cx="250" cy="250" rx="100" ry="120"
+  style="fill:#EBEB7A;stroke:#858514;stroke-width:2" />-->
+        <!--<polygon points="250,372 270,390 230,390" style="fill:#858514;stroke:#EBEB7A;stroke-width:1" />
+  <line x1="250" y1="390" x2="250" y2="500" style="stroke:#858514;stroke-width:2" />-->
+
+        <!--<polyline points="700,330 650,500 695,500 700,490 705,500 750,500 700,330"
+  style="fill:none;stroke:black;stroke-width:3" />
+  <polyline points="700,490 700,425  755,370 755,500 705,500 "
+  style="fill:none;stroke:black;stroke-width:3" />
+  <polyline points="700,425  645,370 645,500 650,500 "
+  style="fill:none;stroke:black;stroke-width:3" />
+  <circle cx="700" cy="323" r="7" stroke="black" stroke-width="3" fill="#fff" />-->
+        <!--</svg>-->
+        <div>
+            <svg></svg>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+
+    <script src="./js/myd3.js"></script>
+</body>
+
+</html>
